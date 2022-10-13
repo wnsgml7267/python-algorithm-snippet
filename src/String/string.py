@@ -1,4 +1,4 @@
 #문자열 변환
 s = "abcdefghijklmnopqrstuvwxyz"
 
-print(s[:])
+print(s[:3])
