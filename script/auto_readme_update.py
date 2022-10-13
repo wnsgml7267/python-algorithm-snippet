@@ -8,7 +8,7 @@ def convert(text):
     return " ".join(text)
 
 def make_readme():
-    files = [(x[4:-4], x) for x in glob('src/**/*.py', recursive=True)]
+    files = [(x[4:-3], x) for x in glob('src/**/*.py', recursive=True)]
     info = dict()
     for file in files:
         dep = file[0].split('/')
