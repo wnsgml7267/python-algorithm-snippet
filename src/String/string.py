@@ -1,4 +1,4 @@
 #문자열 변환
 s = "abcdefghijklmnopqrstuvwxyz"
 
-print(s[:3])
+print(s[::-1]) #거꾸로 출력
