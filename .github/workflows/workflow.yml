@@ -1,0 +1,34 @@
+name: Make python.json and README
+
+on:
+  push:
+    branch: 'main'
+    paths:
+      - '**.py'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Python
+        uses: actions/setup-python@v1
+        with:
+          python-version: '3.x'
+          architecture: 'x64'
+      - name: Run assemble.py
+        run: python3 script/assemble.py
+      - name: Run auto_readme_update.py
+        run: python3 script/auto_readme_update.py > README.md
+      - name: Add and Commit
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: wnsgml7267
+          author_email: dlwns7267@naver.com
+          message: '[Auto UPD] Make python.json'
+          add: '*.*'
+      - name: Push
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
