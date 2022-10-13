@@ -1,7 +1,7 @@
 # Algorithm Snippet
 
 ## Data Structure
-- [Array](src/data_structure/array.py)
+- [Stack](src/data_structure/stack.py)
 - [Queue](src/data_structure/queue.py)
 - [Deque](src/data_structure/deque.py)
 
