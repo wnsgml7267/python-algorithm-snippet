@@ -24,7 +24,7 @@ jobs:
         with:
           author_name: wnsgml7267
           author_email: dlwns7267@naver.com
-          message: '[Auto UPD] Make python.json'
+          message: '[Auto] Update README.md'
           add: '*.*'
       - name: Push
         uses: ad-m/github-push-action@master
