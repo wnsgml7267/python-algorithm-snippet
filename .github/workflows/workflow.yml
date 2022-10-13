@@ -17,8 +17,6 @@ jobs:
         with:
           python-version: '3.x'
           architecture: 'x64'
-      - name: Run assemble.py
-        run: python3 script/assemble.py
       - name: Run auto_readme_update.py
         run: python3 script/auto_readme_update.py > README.md
       - name: Add and Commit
