@@ -1,9 +1,9 @@
 # Algorithm Snippet
 
 ## Data Structure
-- [Arra](src/data_structure/array.py)
-- [Dequ](src/data_structure/deque.py)
+- [Array](src/data_structure/array.py)
+- [Deque](src/data_structure/deque.py)
 
 ## String
-- [Strin](src/String/string.py)
+- [String](src/String/string.py)
 
