@@ -6,6 +6,7 @@
 - [Deque](src/data_structure/deque.py)
 
 ## Graph
+- [Mst](src/Graph/mst.py)
 - [Dfs](src/Graph/dfs.py)
 
 ## String
