@@ -9,6 +9,9 @@
 - [Mst](src/Graph/mst.py)
 - [Dfs](src/Graph/dfs.py)
 
+## Math
+- [Permutation](src/Math/permutation.py)
+
 ## String
 - [String](src/String/string.py)
 
