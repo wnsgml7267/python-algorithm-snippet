@@ -10,6 +10,7 @@
 - [Dfs](src/Graph/dfs.py)
 
 ## Math
+- [Combination](src/Math/combination.py)
 - [Permutation](src/Math/permutation.py)
 
 ## String
