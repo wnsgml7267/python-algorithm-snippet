@@ -8,9 +8,12 @@ input = sys.stdin.readline
 
 v, e = map(int,input().split()) # 정점, 간선
 parent = [0] * (v+1)
+
+# make-set : 최소 단위 서로소 집합 만듦.
 for i in range(1, v+1):
     parent[i] = i # 자신을 가리키는 초기 노드 생성
 
+# find-set : 주어진 원소가 속한 집합의 대표자 찾기.
 def find(a):
     # 경로 압축 O (해당 노드의 부모 노드를 바로 저장시킴) - 시간 복잡도 개선
     if parent[a] != a:
@@ -21,7 +24,8 @@ def find(a):
     # if a == parent[a]:
     #     return a
     # return find(parent[a])
-    
+
+# union : 주어진 두 원소가 속한 집합(대표자끼리)을 합치기
 def union(a,b):
     aRoot = find(a)
     bRoot = find(b)
