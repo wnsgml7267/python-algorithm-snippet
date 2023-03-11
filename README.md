@@ -16,6 +16,7 @@
 - [Permutation](src/Math/permutation.py)
 
 ## Graph
+- [Topological Sort](src/Graph/topological_sort.py)
 - [Mst](src/Graph/mst.py)
 - [Union Find](src/Graph/union_find.py)
 - [Dfs](src/Graph/dfs.py)
